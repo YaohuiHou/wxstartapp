@@ -1,0 +1,26 @@
+<template name="help">
+  <view wx:for="{{needHelpList}}" class='help-list'>
+    <!-- header -->
+    <view class='head'>
+      <image class='figure' style='width:64rpx;height:64rpx;' src='{{item.headpic}}'></image>
+      <view class='content'>
+        <view class='info'>
+          <text class='name'>{{item.nikename}}</text>
+          <text class='grade'>{{item.grade}}</text>
+        </view>
+        <view class='type'>
+          <text class='time'>{{item.date}}</text>
+          <text class='tag'>{{item.tag}}</text>
+        </view>
+      </view>
+      <view class='some'>
+        <view class='yes' wx:if="{{item.status}}">
+          <icon></icon>已解决
+        </view>
+        <view class='no' wx:else>
+          <icon></icon>未解决
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

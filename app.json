@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/cityhelp/cityhelp",
+    "pages/message/message",
+    "pages/newhelp/newhelp",
+    "pages/search/search",
+    "pages/city/city",
+    "pages/vital/vital",
+    "pages/index/list/list",
+    "pages/help/help"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "求助问答",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#f5f5f5",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#A1A9B3",
+    "selectedColor": "#F76B1C",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/city.png",
+        "text": "同城求助",
+        "selectedIconPath": "image/selected_city.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/first.png",
+        "text": "最新求助",
+        "selectedIconPath": "image/selected_first.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "image/news.png",
+        "text": "消息",
+        "selectedIconPath": "image/selected_news.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

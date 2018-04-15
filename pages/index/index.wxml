@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="header">
+  <navigator url="../search/search" class='search-input'>
+    <image src="../../image/bbs_tribune_sos_search.png"></image>
+    <text>大家都在搜：路况</text>
+  </navigator>
+  <navigator url="../city/city" class='change-city'>
+    <text>北京</text>
+  </navigator>
+</view>
+<!--  主视觉  -->
+<view class="vision">
+  <navigator url="../vital/vital" class='center'>
+    <image style="width:750rpx;height:300rpx;" src="../../image/banner.png" class="bg" mode="scaleToFill"></image>
+    <image style="width:94rpx;height:94rpx;" src="https://i.kcimg.cn/data/avatar/noavatar_big.gif-50x50.jpg" class='user'></image>
+  </navigator>
+  <text class='hint'>截止2017年8月10日已经为卡友解决 8451713 个问题</text>
+</view>
+
+<!-- 楷模展览 -->
+<import src="list/list.wxml"/>
+<import src="../help/help.wxml"/>
+<template is="list" data="{{showList}}"/>
+
+<!-- help列表 -->
+<template is="help" data="{{needHelpList}}"/>

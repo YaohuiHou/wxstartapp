@@ -1,0 +1,95 @@
+/**index.wxss**/
+page{
+  background: #f3f4f5;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 5px 10px;
+  height: 45px;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+.search-input{
+  width: calc(100% - 76px);
+  height: 35px;
+  border: 1px solid #E4E5E6;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.search-input image{
+  width: 15px;
+  height: 15px;
+  padding: 0 10px;
+}
+.search-input text{
+  font-size: 16px;
+  color: rgba(23,24,26,.4);
+  line-height: 35px;
+}
+/*  城市  */
+.change-city{
+  width: 76px;
+  font-size: 16px;
+  color: #17181A;
+  box-sizing: border-box;
+  padding-left: 12px;
+  position: relative;
+}
+.change-city text::after{
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -2px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #17181A;
+}
+/* 主视觉 */
+.center{
+  position: relative;
+}
+.center .bg{
+  vertical-align: top;
+}
+.center .user{
+  position: absolute;
+  left: 50%;
+  top: 110rpx;
+  border-radius: 50%;
+  margin-left: -47rpx;
+}
+.vision{
+  position: relative;
+}
+.hint{
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  font-size: 12px;
+  color: #FFFFFF;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.7);
+  animation: hint 10s infinite linear;
+}
+
+@keyframes hint{
+  0%{
+    transform: translate3d(150%,0,0);
+  }
+  100%{
+    transform: translate3d(-150%,0,0);
+  }
+}
+ 
+@import "list/list.wxss" ;
+@import "../help/help.wxss" ;

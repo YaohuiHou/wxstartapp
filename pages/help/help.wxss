@@ -1,0 +1,10 @@
+.help-list{
+  background: #fff;
+  margin-bottom: 8px;
+  padding: 12px 16px 0;
+  box-sizing: border-box;
+}
+.head{
+  display: flex;
+  padding: 
+}

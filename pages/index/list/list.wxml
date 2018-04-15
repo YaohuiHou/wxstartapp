@@ -1,0 +1,11 @@
+<!--pages/index/list/list.wxml-->
+<template name="list">
+  <view class='show-list'>
+    <navigator wx:for="{{showList}}" class='item'>
+      <image src='{{item.img}}' style='width:100rpx;height:100rpx'></image>
+      <text class='list-name'>{{item.name}}</text>
+      <text class='list-title' style="color:{{item.color}}">{{item.title}}</text>
+    </navigator>
+  </view>
+</template>
+
